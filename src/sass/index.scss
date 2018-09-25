@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     font: 25px Roboto, Arial, Sans-serif;
 }
@@ -25,7 +29,7 @@ main {
     height: 100%;
     margin-bottom: 90vh;
     background-color: #101010;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
     #scroll {
         height: 100vh;
         perspective: 1px;
@@ -68,16 +72,27 @@ main {
                 bottom: 0;
                 left: 0;
             }
+            &:nth-child(2){
+                top: 50vh;
+            }
+            &:nth-child(3) {
+                top: 200vh;
+            }
             .parallax-background {
                 transform: translateZ(-2px) scale(3);
             }
-            .watermark {
-                top: 17rem;
+            .watermark, .watermark2 {
                 font-weight: 900;
                 font-size: 2.5rem;
                 color: #efefef;
                 opacity: 0.1;
                 
+            }
+            .watermark {
+                top: 100vh;
+            }
+            .watermark2 {
+                top: 150vh;
             }
             .parallax-foreground {
                 transform: translateZ(0);
@@ -138,7 +153,7 @@ main {
             }
         }
         .second-section {
-            top: 40rem;
+            top: 100vh;
         }
     }
 }
@@ -219,9 +234,8 @@ footer {
     main {
         #scroll {
             .parallax {
-                .watermark {
+                .watermark, .watermark2 {
                     font-size: 4rem;
-                    top: 13rem;
                 }
             }
         }
@@ -349,7 +363,7 @@ footer {
     main {
         #scroll {
             .parallax {
-                .watermark {
+                .watermark, .watermark2 {
                     font-size: 7rem;
                 }
                 .skills-styles {
