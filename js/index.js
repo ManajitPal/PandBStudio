@@ -1,3 +1,4 @@
+const projectNames = ['1', '2', '3'];
 /**
  * Load all the functions once DOM tree is loaded.
  */
@@ -13,7 +14,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	/**
 	 * Dynamically add project list.
 	 */
-	const projectNames = ['1', '2', '3'];
 	const ul = document.getElementById('project-container');
 	projectNames.forEach((projectName) => {
 		ul.append(createProjectList(projectName));
