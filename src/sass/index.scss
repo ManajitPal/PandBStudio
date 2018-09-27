@@ -64,6 +64,7 @@ header {
     img {
         width: auto;
         height: 100%;
+        max-height: 117px;
     }
 }
 /** End Header **/
@@ -75,11 +76,11 @@ main {
     z-index: 2;
     background-color: #101010;
     margin-bottom: auto;
-    // scroll-snap-type: y mandatory;
-    // overflow-y: scroll;
-    // scroll-behavior: smooth;
-    // height: 100%;
-    // width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
     
     
     section {
