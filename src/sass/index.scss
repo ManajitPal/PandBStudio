@@ -42,7 +42,7 @@ Contents:
 /**/
 
 
-/** Begin Body Adding Scroll Snap Feature. Current Alignment is 'end' **/
+/** Begin Global Scroll Snap Feature. Current Alignment is 'start' **/
 body{
     scroll-snap-type: y proximity;
     overflow-y: scroll;
@@ -70,13 +70,16 @@ header {
 
 /** Begin Main **/
 main {
-    display: flex;
+    scroll-snap-align: start;
     position: absolute;
     z-index: 2;
-    flex-direction: column;
-    flex-wrap: wrap;
     background-color: #101010;
     margin-bottom: auto;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
     
     
     section {
@@ -93,7 +96,7 @@ main {
         }
 
         &:nth-child(1) {
-            scroll-snap-align: end;
+            scroll-snap-align: start;
             height: 100vh;
 
             h2 {
@@ -115,7 +118,6 @@ main {
         }
         &:nth-child(2) {
             scroll-snap-align: start;
-            scroll-snap-align: end;
             min-height: 100vh;
             height: 100%;
 
@@ -152,7 +154,7 @@ main {
             }
         }
         &:nth-child(3) {
-            scroll-snap-align: end;
+            scroll-snap-align: start;
             min-height: 100vh;
             height: 100%;
 
