@@ -70,14 +70,14 @@ header {
 
 /** Begin Main **/
 main {
-    scroll-snap-align: start;
+    
     position: absolute;
     z-index: 2;
     background-color: #101010;
     margin-bottom: auto;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+    // scroll-behavior: smooth;
     height: 100%;
     width: 100%;
     
